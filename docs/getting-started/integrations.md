@@ -30,8 +30,25 @@ DataForSEO powers high-throughput SERP rank checks, search volumes, keyword diff
 
 ---
 
-## 3. Large Language Model (LLM) Providers
+## 3. Cloudflare
+
+Connect your Cloudflare account to automate DNS records, cache purging, and tunnel configurations.
+
+### How to Connect
+1. Navigate to **Connections** (or **Settings** → **Third-Party Integrations**).
+2. Under **Marketing & Ads**, locate **Cloudflare**.
+3. **Critical Contract**: Name the connection exactly **`cloudflare`**.
+   - The credential is encrypted in your AES-256 vault at path: `shared/integration/cloudflare`. Future agent skills automatically read from this exact vault path.
+4. Generate an API Token in your Cloudflare dashboard (scoped to DNS-edit and cache-purge permissions).
+5. Paste the token into **`CLOUDFLARE_API_TOKEN`** (auto-masked with show/hide toggle).
+6. Click **Test Connection**: The backend runs a zero-touch verification against `GET /client/v4/user/tokens/verify`, proving the token's validity and active status without reading or altering any zone data.
+7. Click **Save**.
+
+---
+
+## 4. Large Language Model (LLM) Providers
 
 Eagentix leverages state-of-the-art LLMs (OpenAI GPT-4o, Claude 3.5 Sonnet, Google Gemini 1.5 Pro) for content drafting, brief synthesis, and SERP intent analysis.
 
 All model prompts are strictly locked to your verified site brief to prevent hallucinations.
+
