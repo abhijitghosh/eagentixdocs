@@ -3,8 +3,8 @@
 #
 # Auth uses the existing SSH keypair (~/.ssh/id_rsa registered in hPanel).
 #
-# Target subdomain: doc.eagentix.com
-# Document root: domains/eagentix.com/public_html/doc
+# Target subdomain: docs.eagentix.com
+# Document root: domains/eagentix.com/public_html/docs
 #
 # Usage:
 #   bash deploy_docs.sh             # build + deploy
@@ -15,8 +15,8 @@ set -euo pipefail
 SSH_USER="u610665342"
 SSH_HOST="147.93.78.230"
 SSH_PORT="65002"
-REMOTE_ROOT="domains/eagentix.com/public_html/doc"
-SITE="https://doc.eagentix.com"
+REMOTE_ROOT="domains/eagentix.com/public_html/docs"
+SITE="https://docs.eagentix.com"
 
 RSH="ssh -p $SSH_PORT -o BatchMode=yes -o StrictHostKeyChecking=accept-new"
 

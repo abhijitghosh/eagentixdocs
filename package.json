@@ -1,17 +1,24 @@
 {
   "name": "eagentixdocs",
   "version": "1.0.0",
-  "description": "Eagentix User & Technical Documentation Site for doc.eagentix.com",
+  "description": "Eagentix User & Technical Documentation Site for docs.eagentix.com",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "deploy": "bash deploy_docs.sh"
+    "deploy:pages": "wrangler pages deploy docs/.vitepress/dist --project-name=eagentixdocs",
+    "deploy:hostinger": "bash deploy_docs.sh"
   },
-  "keywords": ["eagentix", "documentation", "seo-studio", "agents"],
+  "keywords": [
+    "eagentix",
+    "documentation",
+    "seo-studio",
+    "agents"
+  ],
   "author": "Eagentix",
   "license": "UNLICENSED",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "wrangler": "^4.135.0"
   }
 }
