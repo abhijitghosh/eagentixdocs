@@ -1,6 +1,6 @@
 # Marketing Studios
 
-Twelve guided studios that turn a product, an article, or a piece of news into
+Thirteen guided studios that turn a product, an article, or a piece of news into
 finished creative — video ads, statics, carousels, slideshows, comics, diagrams,
 and announcements. Every studio follows the same contract: you approve the plan
 before anything renders, everything stays grounded in facts you supplied, and
@@ -20,6 +20,7 @@ history restores finished work exactly as it was.
 | [Motion Ad Studio](/studios/marketing/10-motion-ad) | A brief plus product | A multi-scene storyboarded ad with cast, approved before render |
 | [Shorts Studio](/studios/marketing/11-shorts) | A clip you upload | A captioned, graded, music-backed short with end card |
 | [Reels Studio](/studios/marketing/12-reels) | A talking-head clip | The speaker cut out into motion graphics, captioned and covered |
+| [Newsletter Studio](/studios/marketing/13-newsletter) | A topic or material | A full issue — sent, published to WordPress, posted to LinkedIn |
 
 ## Which studio when
 

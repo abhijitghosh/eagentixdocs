@@ -69,7 +69,8 @@ export default defineConfig({
             { text: 'Diagram Studio', link: '/studios/marketing/09-diagram' },
             { text: 'Motion Ad Studio', link: '/studios/marketing/10-motion-ad' },
             { text: 'Shorts Studio', link: '/studios/marketing/11-shorts' },
-            { text: 'Reels Studio', link: '/studios/marketing/12-reels' }
+            { text: 'Reels Studio', link: '/studios/marketing/12-reels' },
+            { text: 'Newsletter Studio', link: '/studios/marketing/13-newsletter' }
           ]
         }
       ],
