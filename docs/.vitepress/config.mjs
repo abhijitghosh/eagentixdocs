@@ -23,6 +23,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/overview' },
       { text: 'SEO Studio', link: '/studios/seo-studio/00-overview' },
+      { text: 'Marketing Studios', link: '/studios/marketing/00-overview' },
       { text: 'Tool Catalog', link: '/reference/seo-tools-catalog' },
       { text: 'Launch App', link: 'https://app.eagentix.com', target: '_blank' }
     ],
@@ -49,6 +50,26 @@ export default defineConfig({
             { text: '05. On-Page Intelligence & Scorecards', link: '/studios/seo-studio/05-onpage-intelligence' },
             { text: '06. Link Architecture & Equity Gaps', link: '/studios/seo-studio/06-links-and-architecture' },
             { text: '07. Monitoring & Rerun Lifecycle', link: '/studios/seo-studio/07-project-health' }
+          ]
+        }
+      ],
+      '/studios/marketing/': [
+        {
+          text: 'Marketing Studios',
+          items: [
+            { text: 'Overview & Which Studio When', link: '/studios/marketing/00-overview' },
+            { text: 'UGC Ad Factory', link: '/studios/marketing/01-ugc-factory' },
+            { text: 'Finished Ad Studio', link: '/studios/marketing/02-finished-ad' },
+            { text: 'Carousel Studio', link: '/studios/marketing/03-carousel' },
+            { text: 'Content Carousel', link: '/studios/marketing/04-content-carousel' },
+            { text: 'TikTok Slideshow', link: '/studios/marketing/05-tiktok-slideshow' },
+            { text: 'Template Ads', link: '/studios/marketing/06-template-ads' },
+            { text: 'Announcement Studio', link: '/studios/marketing/07-announcement' },
+            { text: 'Comic Strip Studio', link: '/studios/marketing/08-comic-strip' },
+            { text: 'Diagram Studio', link: '/studios/marketing/09-diagram' },
+            { text: 'Motion Ad Studio', link: '/studios/marketing/10-motion-ad' },
+            { text: 'Shorts Studio', link: '/studios/marketing/11-shorts' },
+            { text: 'Reels Studio', link: '/studios/marketing/12-reels' }
           ]
         }
       ],
