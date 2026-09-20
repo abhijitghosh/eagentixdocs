@@ -147,7 +147,8 @@ export default defineConfig({
             { text: 'Reels Studio', link: '/studios/marketing/12-reels' },
             { text: 'Newsletter Studio', link: '/studios/marketing/13-newsletter' },
             { text: 'Winning Statics', link: '/studios/marketing/14-winning-statics' },
-            { text: 'Landing Page Studio', link: '/studios/marketing/15-landing-page' }
+            { text: 'Landing Page Studio', link: '/studios/marketing/15-landing-page' },
+            { text: 'Production Studio', link: '/studios/marketing/16-production' }
           ]
         },
         {
