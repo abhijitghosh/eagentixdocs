@@ -14,7 +14,7 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: 'Comprehensive user guides and workflows for Eagentix studios and agents.' }]
   ],
   themeConfig: {
-    logo: '/logo_menu.png',
+    logo: { light: '/logo_menu.png', dark: '/logo-transparent.png' },
     siteTitle: 'Eagentix Docs',
     search: {
       provider: 'local'
