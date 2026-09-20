@@ -81,9 +81,6 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/eagentix' }
-    ],
     footer: {
       message: 'Autonomous Agents for Enterprise Workflows.',
       copyright: 'Copyright © 2026 Eagentix. All rights reserved.'
