@@ -3,16 +3,66 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Eagentix Documentation',
   description: 'Guides, Workflows, and Tool Reference for Eagentix Autonomous Agents',
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://docs.eagentix.com',
+    // Redirect stubs for the old /studios/seo-studio/* URLs must never be
+    // indexed — the canonical pages live under /studios/marketing/seo-studio/.
+    transformItems: (items) => items.filter((i) => !i.url.startsWith('studios/seo-studio/'))
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'theme-color', content: '#0284c7' }],
+    ['meta', { name: 'description', content: 'Comprehensive user guides and workflows for Eagentix studios and agents.' }],
+    ['meta', { name: 'author', content: 'Eagentix' }],
+    ['meta', { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1' }],
+    ['meta', { name: 'googlebot', content: 'index, follow, max-image-preview:large, max-snippet:-1' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:locale', content: 'en_US' }],
     ['meta', { property: 'og:title', content: 'Eagentix Documentation' }],
     ['meta', { property: 'og:site_name', content: 'Eagentix Docs' }],
-    ['meta', { property: 'og:image', content: '/logo.png' }],
-    ['meta', { property: 'og:description', content: 'Comprehensive user guides and workflows for Eagentix studios and agents.' }]
+    ['meta', { property: 'og:image', content: 'https://docs.eagentix.com/logo.png' }],
+    ['meta', { property: 'og:image:alt', content: 'Eagentix Documentation' }],
+    ['meta', { property: 'og:description', content: 'Comprehensive user guides and workflows for Eagentix studios and agents.' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Eagentix Documentation' }],
+    ['meta', { name: 'twitter:description', content: 'Comprehensive user guides and workflows for Eagentix studios and agents.' }],
+    ['meta', { name: 'twitter:image', content: 'https://docs.eagentix.com/logo.png' }],
+    ['link', { rel: 'service-doc', type: 'text/markdown', href: '/llms.txt' }],
+    ['link', { rel: 'alternate', type: 'text/markdown', href: '/llms.txt' }],
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          name: 'Eagentix',
+          url: 'https://eagentix.com/',
+          logo: 'https://docs.eagentix.com/logo.png',
+          contactPoint: {
+            '@type': 'ContactPoint',
+            url: 'https://eagentix.com/',
+            contactType: 'customer support'
+          }
+        },
+        {
+          '@type': 'WebSite',
+          name: 'Eagentix Documentation',
+          url: 'https://docs.eagentix.com/'
+        }
+      ]
+    })]
   ],
+  async transformHead({ pageData }) {
+    // Per-page canonical + og:url so every indexed page points at itself.
+    const path = pageData.relativePath
+      .replace(/\.md$/, '.html')
+      .replace(/(^|\/)index\.html$/, '$1');
+    const url = `https://docs.eagentix.com/${path}`;
+    return [
+      ['link', { rel: 'canonical', href: url }],
+      ['meta', { property: 'og:url', content: url }]
+    ];
+  },
   themeConfig: {
     logo: { light: '/logo_menu.png', dark: '/logo-transparent-light.png' },
     siteTitle: 'Eagentix Docs',

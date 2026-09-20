@@ -1,3 +1,7 @@
+---
+description: "All Eagentix marketing studios in one place — video ads, statics, carousels, slideshows, newsletters, landing pages, SEO, and more, with guidance on which studio to use when."
+---
+
 # Marketing Studios
 
 Sixteen guided studios that turn a product, an article, or a piece of news into

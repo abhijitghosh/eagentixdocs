@@ -1,3 +1,7 @@
+---
+description: "Eagentix platform overview — autonomous agents and domain studios for marketing, SEO, and operations workflows."
+---
+
 # Platform Overview
 
 Welcome to the **Eagentix Platform**. Eagentix empowers marketing, engineering, and operations teams to execute complex, multi-step business workflows through autonomous, specialized agents and domain studios.

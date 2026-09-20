@@ -1,5 +1,6 @@
 ---
 layout: home
+description: "User guides and workflows for Eagentix autonomous agents — marketing studios, SEO studio, and platform setup."
 
 hero:
   name: "Eagentix Documentation"

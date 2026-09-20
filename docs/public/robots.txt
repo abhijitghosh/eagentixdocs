@@ -1,0 +1,55 @@
+# Content Signals: index and cite this site, do not train on it. Mirrors the
+# policy in eagentix.com robots.txt — a reservation of rights, not a wall.
+User-agent: *
+Content-Signal: search=yes,ai-train=no,use=reference
+Allow: /
+
+# Frontier AI & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Headless & Prerender Crawlers
+User-agent: CloudflareBrowserRenderingCrawler
+Allow: /
+
+# Sitemap
+Sitemap: https://docs.eagentix.com/sitemap.xml

@@ -1,0 +1,41 @@
+# Eagentix Documentation
+
+> User guides and workflows for Eagentix autonomous agents — marketing studios, SEO studio, and platform setup.
+
+## Getting Started
+- [Platform Overview](/getting-started/overview)
+- [Workspace & Site Switching](/getting-started/workspace-and-sites)
+- [Connecting Integrations](/getting-started/integrations)
+
+## Marketing Studios
+- [Overview & Which Studio When](/studios/marketing/00-overview)
+- [UGC Ad Factory](/studios/marketing/01-ugc-factory)
+- [Finished Ad Studio](/studios/marketing/02-finished-ad)
+- [Carousel Studio](/studios/marketing/03-carousel)
+- [Content Carousel](/studios/marketing/04-content-carousel)
+- [TikTok Slideshow](/studios/marketing/05-tiktok-slideshow)
+- [Template Ads](/studios/marketing/06-template-ads)
+- [Announcement Studio](/studios/marketing/07-announcement)
+- [Comic Strip Studio](/studios/marketing/08-comic-strip)
+- [Diagram Studio](/studios/marketing/09-diagram)
+- [Motion Ad Studio](/studios/marketing/10-motion-ad)
+- [Shorts Studio](/studios/marketing/11-shorts)
+- [Reels Studio](/studios/marketing/12-reels)
+- [Newsletter Studio](/studios/marketing/13-newsletter)
+- [Winning Statics](/studios/marketing/14-winning-statics)
+- [Landing Page Studio](/studios/marketing/15-landing-page)
+
+## SEO Studio Guide
+- [Studio Architecture & Pillars](/studios/marketing/seo-studio/00-overview)
+- [Site Brief & Ground Truth](/studios/marketing/seo-studio/01-site-brief)
+- [Keyword Strategy & SERP Campaigns](/studios/marketing/seo-studio/02-keyword-campaigns)
+- [Rank Movement & Same-Day Reruns](/studios/marketing/seo-studio/03-tracking-and-reruns)
+- [Research-Locked AI Drafting](/studios/marketing/seo-studio/04-content-drafting)
+- [On-Page Intelligence & Scorecards](/studios/marketing/seo-studio/05-onpage-intelligence)
+- [Link Architecture & Equity Gaps](/studios/marketing/seo-studio/06-links-and-architecture)
+- [Monitoring & Rerun Lifecycle](/studios/marketing/seo-studio/07-project-health)
+
+## Links
+- [Eagentix Docs](https://docs.eagentix.com/)
+- [Eagentix](https://eagentix.com/)
+- [Launch App](https://app.eagentix.com)
