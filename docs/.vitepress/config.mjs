@@ -23,7 +23,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/overview' },
       { text: 'Marketing Studios', link: '/studios/marketing/00-overview' },
-      { text: 'Tool Catalog', link: '/reference/seo-tools-catalog' },
       { text: 'Launch App', link: 'https://app.eagentix.com', target: '_blank' }
     ],
     sidebar: {
@@ -72,14 +71,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/reference/': [
-        {
-          text: 'Reference',
-          items: [
-            { text: 'SEO Skills & Tool Catalog', link: '/reference/seo-tools-catalog' }
-          ]
-        }
-      ]
     },
     footer: {
       message: 'Autonomous Agents for Enterprise Workflows.',
