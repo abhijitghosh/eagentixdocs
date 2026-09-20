@@ -43,4 +43,4 @@ When working inside a Studio such as **SEO Studio**, the interface is organized 
 
 - Learn how [Workspace & Site Switching](/getting-started/workspace-and-sites) guarantees multi-tenant data isolation.
 - Check [Connecting Integrations](/getting-started/integrations) to configure DataForSEO and Google Search Console.
-- Jump straight into the [SEO Studio Guide](/studios/seo-studio/00-overview).
+- Jump straight into the [SEO Studio Guide](/studios/marketing/seo-studio/00-overview).

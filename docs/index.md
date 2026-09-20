@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Explore SEO Studio
-      link: /studios/seo-studio/00-overview
+      link: /studios/marketing/seo-studio/00-overview
     - theme: alt
       text: Getting Started
       link: /getting-started/overview

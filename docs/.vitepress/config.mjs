@@ -22,7 +22,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/overview' },
-      { text: 'SEO Studio', link: '/studios/seo-studio/00-overview' },
       { text: 'Marketing Studios', link: '/studios/marketing/00-overview' },
       { text: 'Tool Catalog', link: '/reference/seo-tools-catalog' },
       { text: 'Launch App', link: 'https://app.eagentix.com', target: '_blank' }
@@ -35,21 +34,6 @@ export default defineConfig({
             { text: 'Platform Overview', link: '/getting-started/overview' },
             { text: 'Workspace & Site Switching', link: '/getting-started/workspace-and-sites' },
             { text: 'Connecting Integrations', link: '/getting-started/integrations' }
-          ]
-        }
-      ],
-      '/studios/seo-studio/': [
-        {
-          text: 'SEO Studio Guide',
-          items: [
-            { text: '00. Studio Architecture & Pillars', link: '/studios/seo-studio/00-overview' },
-            { text: '01. Site Brief & Ground Truth', link: '/studios/seo-studio/01-site-brief' },
-            { text: '02. Keyword Strategy & SERP Campaigns', link: '/studios/seo-studio/02-keyword-campaigns' },
-            { text: '03. Rank Movement & Same-Day Reruns', link: '/studios/seo-studio/03-tracking-and-reruns' },
-            { text: '04. Research-Locked AI Drafting', link: '/studios/seo-studio/04-content-drafting' },
-            { text: '05. On-Page Intelligence & Scorecards', link: '/studios/seo-studio/05-onpage-intelligence' },
-            { text: '06. Link Architecture & Equity Gaps', link: '/studios/seo-studio/06-links-and-architecture' },
-            { text: '07. Monitoring & Rerun Lifecycle', link: '/studios/seo-studio/07-project-health' }
           ]
         }
       ],
@@ -72,6 +56,19 @@ export default defineConfig({
             { text: 'Reels Studio', link: '/studios/marketing/12-reels' },
             { text: 'Newsletter Studio', link: '/studios/marketing/13-newsletter' },
             { text: 'Winning Statics', link: '/studios/marketing/14-winning-statics' }
+          ]
+        },
+        {
+          text: 'SEO Studio Guide',
+          items: [
+            { text: 'Studio Architecture & Pillars', link: '/studios/marketing/seo-studio/00-overview' },
+            { text: 'Site Brief & Ground Truth', link: '/studios/marketing/seo-studio/01-site-brief' },
+            { text: 'Keyword Strategy & SERP Campaigns', link: '/studios/marketing/seo-studio/02-keyword-campaigns' },
+            { text: 'Rank Movement & Same-Day Reruns', link: '/studios/marketing/seo-studio/03-tracking-and-reruns' },
+            { text: 'Research-Locked AI Drafting', link: '/studios/marketing/seo-studio/04-content-drafting' },
+            { text: 'On-Page Intelligence & Scorecards', link: '/studios/marketing/seo-studio/05-onpage-intelligence' },
+            { text: 'Link Architecture & Equity Gaps', link: '/studios/marketing/seo-studio/06-links-and-architecture' },
+            { text: 'Monitoring & Rerun Lifecycle', link: '/studios/marketing/seo-studio/07-project-health' }
           ]
         }
       ],
