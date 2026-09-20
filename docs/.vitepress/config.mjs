@@ -58,10 +58,51 @@ export default defineConfig({
       .replace(/\.md$/, '.html')
       .replace(/(^|\/)index\.html$/, '$1');
     const url = `https://docs.eagentix.com/${path}`;
-    return [
+    const tags = [
       ['link', { rel: 'canonical', href: url }],
       ['meta', { property: 'og:url', content: url }]
     ];
+    // FAQPage schema lives here, not in frontmatter — a one-line JSON blob
+    // breaks the frontmatter YAML parser.
+    if (pageData.relativePath === 'getting-started/faq.md') {
+      tags.push(['script', { type: 'application/ld+json' }, JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'What is an Eagentix Studio?',
+            acceptedAnswer: { '@type': 'Answer', text: 'A Studio is a guided workflow for one job — video ads, carousels, newsletters, landing pages, SEO. You approve the plan before anything renders, and everything stays grounded in facts you supplied.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'Do I need to write prompts?',
+            acceptedAnswer: { '@type': 'Answer', text: 'No. Every studio uses pickers, briefs, and editable drafts — formats, styles, voices, and layouts are choices, not prompt engineering.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'What uses credits?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Planning and rendering. Browsing, picking, editing, history, downloads, and post copy are free. Each studio guide lists exactly what is metered.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'Will the AI invent claims about my product?',
+            acceptedAnswer: { '@type': 'Answer', text: 'No. Copy comes only from facts you supplied — product details, proof points, allowed claims. Anything off-limits is never used or inflated, and proof sections render only from real material.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'What happens to my past work?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Every studio autosaves to history. Reopening restores inputs, edits, and renders exactly as they were — finished work is never lost and never needs paying for twice.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'Which studio should I use?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Start at the Marketing Studios overview. Quick talking-head video goes to UGC Ad Factory, multi-scene storyboarded video to Motion Ad Studio, LinkedIn carousels to Content Carousel, TikTok slides to TikTok Slideshow, news to Announcement Studio, rankings and audits to SEO Studio.' }
+          }
+        ]
+      })]);
+    }
+    return tags;
   },
   themeConfig: {
     logo: { light: '/logo_menu.png', dark: '/logo-transparent-light.png' },
@@ -82,7 +123,8 @@ export default defineConfig({
           items: [
             { text: 'Platform Overview', link: '/getting-started/overview' },
             { text: 'Workspace & Site Switching', link: '/getting-started/workspace-and-sites' },
-            { text: 'Connecting Integrations', link: '/getting-started/integrations' }
+            { text: 'Connecting Integrations', link: '/getting-started/integrations' },
+            { text: 'FAQ', link: '/getting-started/faq' }
           ]
         }
       ],
