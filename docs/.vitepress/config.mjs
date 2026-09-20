@@ -148,7 +148,8 @@ export default defineConfig({
             { text: 'Newsletter Studio', link: '/studios/marketing/13-newsletter' },
             { text: 'Winning Statics', link: '/studios/marketing/14-winning-statics' },
             { text: 'Landing Page Studio', link: '/studios/marketing/15-landing-page' },
-            { text: 'Production Studio', link: '/studios/marketing/16-production' }
+            { text: 'Production Studio', link: '/studios/marketing/16-production' },
+            { text: 'Animation Studio', link: '/studios/marketing/17-animation' }
           ]
         },
         {
