@@ -7,6 +7,15 @@ For one creator talking to camera in minutes, use UGC Ad Factory instead. That i
 quick path; this is the produced one. Testimonial and founder-story intents live in
 UGC — this studio starts where a single to-camera cut stops.
 
+## The Explainer Ads path
+
+The Explainer Ads tile opens this same studio with the structure locked to
+explainer and narration-first defaults: question hook → context → payoff → brand
+tie, voiceover-led with captions on, no talking heads required. Built for cold
+audiences — open on a question people actually wonder about, build the answer over
+b-roll, land the brand as the natural conclusion. Everything below applies
+unchanged; only the structure picker is hidden.
+
 ## How it works
 
 1. Brief + product — a line about the ad, plus the product page link, photos, or
