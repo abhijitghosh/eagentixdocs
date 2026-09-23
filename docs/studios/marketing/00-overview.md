@@ -4,7 +4,7 @@ description: "All Eagentix marketing studios in one place — video ads, statics
 
 # Marketing Studios
 
-Nineteen guided studios that turn a product, an article, or a piece of news into
+Twenty guided studios that turn a product, an article, or a piece of news into
 finished creative — video ads, statics, carousels, slideshows, comics, diagrams,
 and announcements. Every studio follows the same contract: you approve the plan
 before anything renders, everything stays grounded in facts you supplied, and
@@ -30,6 +30,7 @@ history restores finished work exactly as it was.
 | [Production Studio](/studios/marketing/16-production) | Directing choices | Reusable cast and locations for every video ad |
 | [Animation Studio](/studios/marketing/17-animation) | Your photos | A motion-template video with music and end card |
 | [Competitor Swipe & Adapt](/studios/marketing/18-competitor-swipe) | Competitor names or handles | Winners torn down and adapted to your product |
+| [Content Waterfall](/studios/marketing/19-content-waterfall) | One pillar piece | Up to 60 planned assets, routed to builder studios |
 | [SEO Studio](/studios/marketing/seo-studio/00-overview) | A website plus keywords | Rank tracking, research-locked drafts, audits, and AI-visibility monitoring |
 
 ## Which studio when

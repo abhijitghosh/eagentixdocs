@@ -150,7 +150,8 @@ export default defineConfig({
             { text: 'Landing Page Studio', link: '/studios/marketing/15-landing-page' },
             { text: 'Production Studio', link: '/studios/marketing/16-production' },
             { text: 'Animation Studio', link: '/studios/marketing/17-animation' },
-            { text: 'Competitor Swipe & Adapt', link: '/studios/marketing/18-competitor-swipe' }
+            { text: 'Competitor Swipe & Adapt', link: '/studios/marketing/18-competitor-swipe' },
+            { text: 'Content Waterfall', link: '/studios/marketing/19-content-waterfall' }
           ]
         },
         {
